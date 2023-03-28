@@ -12,7 +12,6 @@ let contHour=0
 
 const moveClock=()=>{
     setInterval(() => {
-
         if (contSeg===60) {
             degreesSeg=-90 //we reset the degrees of the second when the minute is over ,to it don't increase infinitely
             contSeg=0; //we reset the counter of the seconds

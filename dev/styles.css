@@ -1,14 +1,33 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
 body{
     margin: 0;
-    background-color: #35110e;
+    background: rgb(15,18,63);
+    background: linear-gradient(0deg, rgba(15,18,63,1) 0%, rgba(2,3,23,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.title{
+    color:#ccc;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: .5em;
+}
+
+
+.clock__container{
+    -webkit-box-reflect: below .3em linear-gradient(transparent,transparent,rgba(0,0,0,.02),rgba(0,0,0,.1));
+
 }
 .clock,.clock__container{
-    width: 25em;
-    height: 25em;
+    width: 23em;
+    height: 23em;
     border-radius: 100%;
     background-color: #fff;
-    border: 3px #000 solid;
-    margin: 10em auto;
+    margin: 4em auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -27,9 +46,9 @@ body{
 .numbers{
     display: flex;
     justify-content: space-between;
-    z-index: 200;
+    z-index: 100;
     width: 80%;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .layer-white{
     position: absolute;
@@ -39,8 +58,10 @@ body{
     background-color: #fff;
 }
 .clock__container{
-    width: 27em;
-    height: 27em;   
+    width: 25em;
+    height: 25em;
+    background-color: rgb(79, 75, 75);
+
 }
 .big-hand{
     width: 50%;
@@ -199,6 +220,7 @@ body{
     transform: rotate(-60deg);
 }
 /*number*/
+
 .numbers:nth-child(34) .number:nth-child(1),
 .numbers:nth-child(34) .number:nth-child(2){
     transform: rotate(-90deg);
