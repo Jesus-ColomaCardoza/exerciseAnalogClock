@@ -13,7 +13,7 @@ body{
 .title{
     color:#ccc;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin-top: .5em;
 }
 
@@ -23,8 +23,8 @@ body{
 
 }
 .clock,.clock__container{
-    width: 23em;
-    height: 23em;
+    width: 15em;
+    height: 15em;
     border-radius: 100%;
     background-color: #fff;
     margin: 4em auto;
@@ -48,7 +48,7 @@ body{
     justify-content: space-between;
     z-index: 100;
     width: 80%;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .layer-white{
     position: absolute;
@@ -58,8 +58,8 @@ body{
     background-color: #fff;
 }
 .clock__container{
-    width: 25em;
-    height: 25em;
+    width: 17em;
+    height: 17em;
     background-color: rgb(79, 75, 75);
 
 }
@@ -240,4 +240,21 @@ body{
 .numbers:nth-child(36) .number:nth-child(1),
 .numbers:nth-child(36) .number:nth-child(2){
     transform: rotate(60deg);
+}
+
+@media screen and (min-width:480px) {
+    .title{
+        font-size: 3.5rem;
+    }
+    .clock{
+        width: 23em;
+        height: 23em;
+    }
+    .clock__container{
+        width: 25em;
+        height: 25em;
+    }
+    .numbers{
+        font-size: 3rem;
+    }
 }
