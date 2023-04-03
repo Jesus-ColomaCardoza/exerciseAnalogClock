@@ -22,11 +22,14 @@ body{
     -webkit-box-reflect: below .3em linear-gradient(transparent,transparent,rgba(0,0,0,.02),rgba(0,0,0,.1));
 
 }
+.clock,.clock__container,.layer-white{
+    background-color: #9fc3c3;
+    color: #333;
+}
 .clock,.clock__container{
     width: 15em;
     height: 15em;
     border-radius: 100%;
-    background-color: #fff;
     margin: 4em auto;
     position: relative;
     display: flex;
@@ -38,10 +41,10 @@ body{
     position: absolute;
 }
 .minute{
-    border: 2px black solid; 
+    border: 2px #333 solid; 
 }
 .second{
-    border: 1px black solid;   
+    border: 1px #333 solid;   
 }
 .numbers{
     display: flex;
@@ -52,10 +55,9 @@ body{
 }
 .layer-white{
     position: absolute;
-    width: 85%;
-    height: 85%;
+    width: 84%;
+    height: 84%;
     border-radius: 100%;   
-    background-color: #fff;
 }
 .layer-white::after{
     content: '';
@@ -71,7 +73,7 @@ body{
 .clock__container{
     width: 17em;
     height: 17em;
-    background-color: rgb(79, 75, 75);
+    background-color: #043c4d;
 }
 .big-hand,.medium-hand,.small-hand{
     transform-origin: left;

@@ -51,15 +51,14 @@ const initClock=()=>{
     contSeg=second;
 
     //we set the current time on the analog clock
-    degreesHour=hour*30-90 // hour*degrees-90 , we use -90 to start from tha hour 12
-    degreesMin=minute*6-90
-    degreesSeg=second*6-90
+    degreesHour=hour*30-90; // hour*degrees-90 , we use -90 to start from tha hour 12
+    degreesMin=minute*6-90;
+    degreesSeg=second*6-90;
     bigHand.style.transform=`translateX(50%) rotate(${degreesHour}deg)`;
     mediumHand.style.transform=`translateX(50%) rotate(${degreesMin}deg)`;
     smallHand.style.transform=`translateX(50%) rotate(${degreesSeg}deg)`;
 
     moveClock()
 }
-
 initClock()
 
